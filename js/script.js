@@ -82,7 +82,8 @@ SoundCloudAPI.renderCards = function(tracks){
 
         card.appendChild(button);
 
-        var searchResults = document.querySelector('.js-search-results');                           searchResults.insertBefore(card, searchResults.firstChild);
+        var searchResults = document.querySelector('.js-search-results');                         
+        searchResults.insertBefore(card, searchResults.firstChild);
       });
 }
 
@@ -114,8 +115,6 @@ SoundCloudAPI.storageClear = function() {
              searchResults.innerHTML = '';
         });
      }
-
-
 SoundCloudAPI.storageClear();
 
 
